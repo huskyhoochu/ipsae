@@ -1,5 +1,6 @@
 {
-  "name": "@ollivm/core",
+  "name": "@olivm/core",
+  "packageManager": "yarn@3.2.2",
   "version": "0.1.0",
   "description": "minimal markdown parser for DIY lover",
   "keywords": [
