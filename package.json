@@ -1,13 +1,14 @@
 {
-  "name": "olivm",
+  "name": "ipsae",
   "packageManager": "yarn@3.2.2",
+  "description": "minimal markdown parser for DIY lover",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "prepare": "husky install",
     "test": "jest",
-    "build": "lerna run build"
+    "build": "rimraf \"./packages/**/dist\" && lerna run build"
   },
   "lint-staged": {
     "**/*.ts": [
@@ -30,6 +31,7 @@
     "lerna": "^5.2.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
     "rollup": "^2.77.0",
     "rollup-plugin-swc3": "^0.3.0",
     "ts-jest": "^28.0.7",

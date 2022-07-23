@@ -1,5 +1,5 @@
-import olivm from '../src';
+import Ipsae from '../src';
 
-it('print olivm', () => {
-  expect(olivm()).toBe('hello olivm!');
+it('print ipsae', () => {
+  expect(Ipsae()).toBe('hello ipsae!');
 });

@@ -1,5 +1,5 @@
-const olivm = () => {
-  return 'hello olivm!';
-};
+function Ipsae() {
+  return 'hello ipsae!';
+}
 
-export default olivm;
+export default Ipsae;
