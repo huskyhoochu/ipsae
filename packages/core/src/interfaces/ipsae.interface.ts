@@ -17,4 +17,6 @@ export interface IIpsae {
     nodeType: IpsaeNodeType,
     nodeSubType?: IpsaeNodeSubType,
   ): void;
+
+  removeNode(cursor: number[]): void;
 }

@@ -81,4 +81,21 @@ export class Ipsae implements IIpsae {
       updateNode.subType = newNodeSubType;
     }
   }
+
+  public removeNode(cursor: number[]) {
+    const copyCursor = cursor.slice();
+    const removePosition = copyCursor.pop();
+
+    if (!removePosition) {
+      throw Error('invalid cursor position');
+    }
+
+    let removeNode = this._tree;
+
+    copyCursor.forEach(idx => {
+      removeNode = removeNode.children[idx];
+    });
+
+    Reflect.deleteProperty(removeNode.children, removePosition);
+  }
 }
