@@ -19,6 +19,9 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
 }
