@@ -19,6 +19,6 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c && tsc --project tsconfig.json"
+    "build": "rollup -c && tsc --project ../../tsconfig.json --declaration --emitDeclarationOnly --outDir ./dist"
   }
 }
