@@ -11,6 +11,7 @@
   "homepage": "",
   "license": "ISC",
   "main": "dist/index.cjs.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
