@@ -1,11 +1,10 @@
 {
-  "name": "@ipsae/core",
-  "packageManager": "yarn@3.2.2",
+  "name": "@ipsae/client",
   "version": "0.1.0",
-  "description": "minimal markdown parser for DIY lover (@core)",
+  "description": "minimal markdown parser for DIY lover (@client)",
   "keywords": [
     "markdown",
-    "markdown-parser"
+    "markdown-renderer"
   ],
   "author": "huskyhoochu <dfg1499@gmail.com>",
   "homepage": "https://github.com/huskyhoochu/ipsae#readme",
@@ -24,7 +23,7 @@
     "url": "git+https://github.com/huskyhoochu/ipsae.git"
   },
   "scripts": {
-    "build": "rollup -c && tsc --project ../../tsconfig.json --declaration --emitDeclarationOnly --outDir ./dist"
+    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/huskyhoochu/ipsae/issues"
