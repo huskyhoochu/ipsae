@@ -1,6 +1,6 @@
 /** @type {import('jest').Config} */
 const config = {
-  roots: ["<rootDir>"],
+  roots: ['<rootDir>'],
   preset: 'ts-jest',
   testEnvironment: 'node',
   transform: {
