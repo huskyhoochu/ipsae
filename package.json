@@ -12,7 +12,7 @@
     "build": "rimraf \"./packages/**/dist\" && lerna run build"
   },
   "lint-staged": {
-    "**/*.ts": [
+    "**/*.{ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ],

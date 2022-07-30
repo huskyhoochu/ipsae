@@ -24,7 +24,7 @@
     "url": "git+https://github.com/huskyhoochu/ipsae.git"
   },
   "scripts": {
-    "build": "rollup -c && tsc --project ../../tsconfig.json --declaration --emitDeclarationOnly --outDir ./dist"
+    "build": "rollup -c && tsc --declaration --emitDeclarationOnly --outDir ./dist"
   },
   "bugs": {
     "url": "https://github.com/huskyhoochu/ipsae/issues"

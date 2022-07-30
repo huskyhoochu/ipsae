@@ -1,15 +1,14 @@
-import { IIpsae } from '@ipsae/core/src/interfaces/ipsae.interface';
+import { Ipsae, IIpsae } from '@ipsae/core';
 import { IRenderer } from '@ipsae/client/src/interfaces/renderer.interface';
-import { Ipsae } from '@ipsae/core/src';
 
 class Renderer implements IRenderer {
   constructor(
     private readonly _ipsae: IIpsae,
-    private readonly _rootElement: HTMLElement,
+    private readonly _rootElement: Element,
   ) {}
 
   private _addEditableAttribute() {
-    this._rootElement.setAttribute('contentEditable', 'true');
+    this._rootElement?.setAttribute('contentEditable', 'true');
   }
 
   public render() {
@@ -19,7 +18,7 @@ class Renderer implements IRenderer {
   }
 }
 
-export const createRoot = (element: HTMLElement): IRenderer => {
+export const createRoot = (element: Element): IRenderer => {
   const ipsae = new Ipsae();
   return new Renderer(ipsae, element);
 };

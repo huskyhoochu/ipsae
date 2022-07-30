@@ -1,16 +1,15 @@
 {
-  "name": "@ipsae/client",
+  "name": "@ipsae/react",
   "version": "0.1.0",
-  "description": "minimal markdown parser for DIY lover (@client)",
+  "description": "minimal markdown parser for DIY lover (@react)",
   "keywords": [
     "markdown",
-    "markdown-renderer"
+    "react"
   ],
   "author": "huskyhoochu <dfg1499@gmail.com>",
   "homepage": "https://github.com/huskyhoochu/ipsae#readme",
   "license": "ISC",
   "main": "dist/index.cjs.js",
-  "types": "dist/index.d.ts",
   "directories": {
     "lib": "dist",
     "test": "__tests__"
@@ -25,8 +24,18 @@
   "scripts": {
     "build": "rollup -c && tsc --declaration --emitDeclarationOnly --outDir ./dist"
   },
+  "peerDependencies": {
+    "react": "^16.8 || 17 || 18",
+    "react-dom": "^16.8 || 17 || 18"
+  },
   "dependencies": {
-    "@ipsae/core": "^0.1.0"
+    "@ipsae/client": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "bugs": {
     "url": "https://github.com/huskyhoochu/ipsae/issues"

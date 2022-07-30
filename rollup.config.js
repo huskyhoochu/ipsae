@@ -18,7 +18,7 @@ export default opts => {
         name: options.name,
       },
     ],
-    plugins: [swc()],
+    plugins: [swc({ tsconfig: options.tsconfig })],
   };
 
   return config;
